@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no">
+    <title>Контакты — Building City Time</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script defer src="js/script.js"></script>
+</head>
+<body>
+
+<header class="site-header">
+    <div class="container header-row">
+        <a class="logo-badge" href="index.html" aria-label="На главную">
+            <img src="logo/logo.png" alt="Building City Time" />
+        </a>
+
+        <ul class="nav-list">
+            <li><a class="nav-link" href="index.html">О компании</a></li>
+            <li><a class="nav-link" href="products.html">Продукция</a></li>
+            <li><a class="nav-link" href="services.html">Услуги</a></li>
+            <li><a class="nav-link active" aria-current="page" href="contact.html">Контакты</a></li>
+            <li><a class="btn btn-yellow" href="mailto:bct.22@mail.ru?subject=Заявка%20BCT&body=Имя:%0AТелефон:%0AОписание%20работ/заказа:%0A">Заполнить анкету</a></li>
+        </ul>
+
+        <button class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false" aria-controls="drawer">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</header>
+
+<aside class="drawer" id="drawer" aria-hidden="true">
+    <nav class="drawer-nav">
+        <a href="index.html">О компании</a>
+        <a href="products.html">Продукция</a>
+        <a href="services.html">Услуги</a>
+        <a class="active" href="contact.html">Контакты</a>
+        <a class="btn btn-yellow w-100" href="mailto:bct.22@mail.ru?subject=Заявка%20BCT&body=Имя:%0AТелефон:%0AОписание%20работ/заказа:%0A">Запросить счёт</a>
+    </nav>
+</aside>
+<div class="backdrop" id="backdrop" hidden></div>
+
+<main>
+    <section class="page-head">
+        <div class="container">
+            <h1>Связаться с нами</h1>
+            <p class="muted">Ответим оперативно удобным для вас способом.</p>
+        </div>
+    </section>
+
+    <section class="container contacts-grid contacts-grid--2">
+        <div class="contacts-card card">
+            <h3>Реквизиты</h3>
+            <div class="req-grid">
+                <ul class="contact-list">
+                    <li><strong>Телефон:</strong> <a href="tel:+77773377701">8 (777) 33 777 01</a></li>
+                    <li><strong>E-mail:</strong> <a href="mailto:bct.22@mail.ru">bct.22@mail.ru</a></li>
+                    <li><strong>Адрес:</strong> г. Астана, ул. Достык 16, Talan Towers</li>
+                </ul>
+                <div class="req-actions">
+                    <a class="btn btn-yellow" href="https://wa.me/77773377701" target="_blank" rel="noopener">WhatsApp</a>
+                    <a class="btn btn-ghost" href="mailto:bct.22@mail.ru?subject=Заявка%20BCT&body=Имя:%0AТелефон:%0AВопрос:%0A">Заполнить анкету</a>
+                    <a class="btn btn-ghost" href="mailto:bct.22@mail.ru?subject=Запрос%20коммерческого%20предложения">Написать на почту</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="contacts-card card">
+            <h3>Карта</h3>
+            <div class="map-large">
+                <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1079.6562997405688!2d71.4312824468879!3d51.12517537619214!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4245841eb39fd6ab%3A0x7a855ed3aa68eec9!2sTalan%20Towers!5e0!3m2!1sru!2sae!4v1756809464908!5m2!1sru!2sae"
+                        allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <p class="muted">Мы находимся в бизнес-центре Talan Towers.</p>
+        </div>
+    </section>
+
+    <section class="cta">
+        <div class="container cta-row">
+            <h2>Есть спецификация, смета или чертеж?</h2>
+            <a class="btn btn-yellow" href="mailto:bct.22@mail.ru?subject=Спецификация/смета%20для%20BCT&body=Коротко%20о%20задаче:%0A">Отправить на почту</a>
+            <a class="btn btn-ghost" href="https://wa.me/77773377701" target="_blank" rel="noopener">WhatsApp</a>
+        </div>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="container footer-grid">
+        <div><strong>Building City Time</strong><br/>repair company</div>
+        <div>
+            <ul class="footer-list">
+                <li><a href="index.html">О компании</a></li>
+                <li><a href="products.html">Продукция</a></li>
+                <li><a href="services.html">Услуги</a></li>
+                <li><a href="contact.html">Контакты</a></li>
+            </ul>
+        </div>
+        <div>
+            <ul class="footer-list">
+                <li><a href="tel:+77773377701">8 (777) 33 777 01</a></li>
+                <li><a href="mailto:bct.22@mail.ru">bct.22@mail.ru</a></li>
+                <li>г. Астана, ул. Достык 16, Talan Towers</li>
+            </ul>
+        </div>
+    </div>
+    <div class="subfooter">© <span id="year"></span> BCT</div>
+</footer>
+
+<a class="whatsapp-fab" href="https://wa.me/77773377701" target="_blank" rel="noopener" aria-label="Написать в WhatsApp">WA</a>
+</body>
+</html>
+<!--Web page provided by N0Pumpkin aka Nurel Orazayev-->

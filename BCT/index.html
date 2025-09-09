@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no">
+    <title>Building City Time — надёжные материалы и инженерные решения</title>
+    <meta name="description" content="Оболочка здания под ключ: кровля, фасады, тепло- и гидроизоляция, водоснабжение. Прямые поставки с заводов, комплектация и логистика. BCT — Building City Time." />
+    <link rel="stylesheet" href="css/style.css" />
+    <script defer src="js/script.js"></script>
+</head>
+<body>
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+    <symbol id="i-factory" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M3 21V9l6 4V9l6 4V5l6-2v18H3Z"/><path d="M7 21v-3m4 3v-3m4 3v-3"/>
+    </symbol>
+    <symbol id="i-panels" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="3" y="3" width="8" height="8"/><rect x="13" y="3" width="8" height="8"/><rect x="3" y="13" width="8" height="8"/><rect x="13" y="13" width="8" height="8"/>
+    </symbol>
+    <symbol id="i-insulate" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M4 7h16M4 17h16"/><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M9 7v10m6-10v10"/>
+    </symbol>
+    <symbol id="i-water" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 3S6 11 6 14.5A6 6 0 0 0 18 14.5C18 11 12 3 12 3Z"/>
+    </symbol>
+    <symbol id="i-truck" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M3 16V7a2 2 0 0 1 2-2h8v11H3Z"/><path d="M13 11h5l3 3v2h-8"/><circle cx="7" cy="18" r="2"/><circle cx="17" cy="18" r="2"/>
+    </symbol>
+    <symbol id="i-calc" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="4" y="2" width="16" height="20" rx="3"/><path d="M8 6h8M8 11h2m4 0h2M8 15h2m4 0h2"/>
+    </symbol>
+    <symbol id="i-headset" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M4 12a8 8 0 0 1 16 0v6a2 2 0 0 1-2 2h-2"/><rect x="2" y="11" width="4" height="7" rx="2"/><rect x="18" y="11" width="4" height="7" rx="2"/>
+    </symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 3l8 3v6c0 5-3.5 7.5-8 9-4.5-1.5-8-4-8-9V6l8-3Z"/><path d="m9 12 2 2 4-4"/>
+    </symbol>
+    <symbol id="i-doc" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><path d="M14 2v6h6M8 13h8M8 17h6"/>
+    </symbol>
+</svg>
+
+
+<header class="site-header">
+    <div class="container header-row">
+        <a class="logo-badge" href="index.html" aria-label="На главную">
+            <img src="logo/logo.png" alt="Building City Time" />
+        </a>
+
+        <ul class="nav-list">
+            <li><a class="nav-link active" aria-current="page" href="index.html">О компании</a></li>
+            <li><a class="nav-link" href="products.html">Продукция</a></li>
+            <li><a class="nav-link" href="services.html">Услуги</a></li>
+            <li><a class="nav-link" href="contact.html">Контакты</a></li>
+            <li><a class="btn btn-yellow" href="mailto:bct.22@mail.ru?subject=Заявка%20BCT&body=Имя:%0AТелефон:%0AОписание%20проекта/заказа:%0A">Заполнить анкету</a></li>
+        </ul>
+
+        <button class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false" aria-controls="drawer">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</header>
+
+<aside class="drawer" id="drawer" aria-hidden="true">
+    <nav class="drawer-nav">
+        <a class="active" href="index.html">О компании</a>
+        <a href="products.html">Продукция</a>
+        <a href="services.html">Услуги</a>
+        <a href="contact.html">Контакты</a>
+        <a class="btn btn-yellow w-100" href="mailto:bct.22@mail.ru?subject=Заявка%20BCT&body=Имя:%0AТелефон:%0AОписание%20проекта/заказа:%0A">Запросить счёт</a>
+    </nav>
+</aside>
+<div class="backdrop" id="backdrop" hidden></div>
+
+<main>
+    <section class="hero">
+        <div class="container hero-grid">
+            <div class="hero-text">
+                <p class="kicker">Оболочка здания под ключ</p>
+
+                <p class="hero-super">
+                    Внешняя конструкция<br>
+                    ФАСАД • КРОВЛЯ • ТЕПЛО- И ГИДРОИЗОЛЯЦИЯ • ВОДОСТОЧНЫЕ СИСТЕМЫ
+                </p>
+
+                <h1 class="h1-compact">
+                    Надёжные материалы внешней конструкции для строительства и инженерии
+                </h1>
+
+                <div class="hero-actions">
+                    <a class="btn btn-yellow" href="products.html">Смотреть продукцию</a>
+                    <a class="btn btn-ghost" href="services.html">Наши услуги</a>
+                </div>
+            </div>
+            <div class="hero-media">
+                <div class="hero-slider" id="heroSlider">
+                    <img src="img/main/crovlennaya-produkcia.png" alt="Стройплощадка"
+                         class="active" loading="eager"
+                         data-cap="Кровельная продукция"/>
+
+                    <img src="img/main/fasad.jpg" alt="Монтаж фасада" loading="lazy"
+                         data-cap="Фасад"/>
+
+                    <img src="img/main/teploizolyacia.jpeg" alt="Теплоизоляция" loading="lazy"
+                         data-cap="Теплоизоляция" />
+
+                    <img src="img/main/vodostochnaya.jpeg" alt="Водосточные системы" loading="lazy"
+                         data-cap="Водосточные система"/>
+
+                    <img src="img/main/hydro.jpeg" alt="Гидроизоляция" loading="lazy"
+                         data-cap="Гидроизоляция" />
+
+                    <img src="img/main/mono-raboty.jpeg" alt="Монтаж" loading="lazy"
+                         data-cap="Монолитные работы (услуги)"/>
+
+                    <img src="img/main/stroy.jpeg" alt="Стройка" loading="lazy"
+                         data-cap="Строительно монтажные работы (услуги)" />
+                    <div class="slider-caption">
+                        <div class="cap-title"></div>
+                        <div class="cap-sub"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="service-slab">
+        <div class="container">
+            <h2>О компании</h2>
+            <p>Наша компания — мы реализуем комплексные строительные решения для жилых комплексов, промышленных объектов, сельхоз-хозяйства и частного домостроения. Мы объединяем продукцию ведущих заводов Казахстана и зарубежных производителей, чтобы предложить клиентам только проверенные и долговечные материалы.</p>
+            <p>Мы работаем по принципу <strong>«всё для оболочки здания и инженерных систем из одних рук»</strong>, что позволяет нашим партнёрам экономить время, снижать затраты и быть уверенными в качестве.</p>
+        </div>
+    </section>
+    <section class="features">
+        <div class="container">
+            <h2>Наши направления</h2>
+            <div class="cards cards-2x2">
+                <article class="card"><h3>Кровельные материалы</h3><p>Металлочерепица, профнастил, мембраны, водосточные системы — от эконом до премиум сегмента.</p></article>
+                <article class="card"><h3>Фасадные системы</h3><p>Металлический сайдинг, фиброцементные панели, композиты и подсистемы для вентилируемых фасадов.</p></article>
+                <article class="card"><h3>Теплоизоляция</h3><p>Минеральная вата, PIR, XPS и современные утеплители для жилых, промышленных зданий и рассадников.</p></article>
+                <article class="card"><h3>Системы водоснабжения</h3><p>Трубы, фитинги, насосы и оборудование для бытовых и промышленных объектов.</p></article>
+            </div>
+        </div>
+    </section>
+    <section class="service-slab">
+        <div class="container">
+            <h2>Наши преимущества</h2>
+            <ul class="advantages">
+                <li><span class="ico"><svg class="i"><use href="#i-factory"/></svg></span><span>Прямые поставки с заводов</span></li>
+                <li><span class="ico"><svg class="i"><use href="#i-panels"/></svg></span><span>Комплексное предложение — всё в одном месте</span></li>
+                <li><span class="ico"><svg class="i"><use href="#i-calc"/></svg></span><span>Индивидуальный расчёт под проект</span></li>
+                <li><span class="ico"><svg class="i"><use href="#i-truck"/></svg></span><span>Собственная логистика и гибкие условия</span></li>
+                <li><span class="ico"><svg class="i"><use href="#i-headset"/></svg></span><span>Техническая поддержка и шеф-контроль по монтажу</span></li>
+                <li><span class="ico"><svg class="i"><use href="#i-shield"/></svg></span><span>Ответственность за соответствие заявленным характеристикам</span></li>
+                <li><span class="ico"><svg class="i"><use href="#i-panels"/></svg></span><span>Сертифицированная продукция от производителей</span></li>
+                <li><span class="ico"><svg class="i"><use href="#i-doc"/></svg></span><span>Официальные документы: договор/счёт, закрывающие акты (ТОО, действующий БИН)</span></li>
+            </ul>
+            <p class="muted">Мы ценим доверие клиентов и ведём бизнес открыто и прозрачно.</p>
+        </div>
+    </section>
+    <section class="cta">
+        <div class="container cta-row">
+            <h2>Ищете надёжного партнёра по поставкам?</h2>
+            <a class="btn btn-yellow" href="mailto:bct.22@mail.ru?subject=Заявка%20BCT&body=Имя:%0AТелефон:%0AКратко%20о%20задаче:%0A">Оставить заявку</a>
+            <a class="btn btn-ghost" href="https://wa.me/77773377701" target="_blank" rel="noopener">WhatsApp</a>
+        </div>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="container footer-grid">
+        <div><strong>Building City Time</strong><br/>repair company</div>
+        <div>
+            <ul class="footer-list">
+                <li><a href="index.html">О компании</a></li>
+                <li><a href="products.html">Продукция</a></li>
+                <li><a href="services.html">Услуги</a></li>
+                <li><a href="contact.html">Контакты</a></li>
+            </ul>
+        </div>
+        <div>
+            <ul class="footer-list">
+                <li><a href="tel:+77773377701">8 (777) 33 777 01</a></li>
+                <li><a href="mailto:bct.22@mail.ru">bct.22@mail.ru</a></li>
+                <li>г. Астана, ул. Достык 16, Talan Towers</li>
+            </ul>
+        </div>
+    </div>
+    <div class="subfooter">© <span id="year"></span> BCT</div>
+</footer>
+
+<a class="whatsapp-fab" href="https://wa.me/77773377701" target="_blank" rel="noopener" aria-label="Написать в WhatsApp">WA</a>
+</body>
+</html>
+<!--Web page provided by N0Pumpkin aka Nurel Orazayev-->

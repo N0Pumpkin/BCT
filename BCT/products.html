@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no">
+  <title>Продукция — Building City Time</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script defer src="js/script.js"></script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-row">
+    <a class="logo-badge" href="index.html" aria-label="На главную">
+      <img src="logo/logo.png" alt="Building City Time" />
+    </a>
+
+    <ul class="nav-list">
+      <li><a class="nav-link" href="index.html">О компании</a></li>
+      <li><a class="nav-link active" aria-current="page" href="products.html">Продукция</a></li>
+      <li><a class="nav-link" href="services.html">Услуги</a></li>
+      <li><a class="nav-link" href="contact.html">Контакты</a></li>
+      <li><a class="btn btn-yellow" href="mailto:bct.22@mail.ru?subject=Запрос%20коммерческого%20предложения&body=Название%20позиции:%0AКол-во:%0AАдрес%20доставки:%0A">Запросить счёт</a></li>
+    </ul>
+
+    <button class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false" aria-controls="drawer">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<aside class="drawer" id="drawer" aria-hidden="true">
+  <nav class="drawer-nav">
+    <a href="index.html">О компании</a>
+    <a class="active" href="products.html">Продукция</a>
+    <a href="services.html">Услуги</a>
+    <a href="contact.html">Контакты</a>
+    <a class="btn btn-yellow w-100" href="mailto:bct.22@mail.ru?subject=Запрос%20коммерческого%20предложения&body=Название%20позиции:%0AКол-во:%0AАдрес%20доставки:%0A">Запросить счёт</a>
+  </nav>
+</aside>
+<div class="backdrop" id="backdrop" hidden></div>
+
+<main>
+  <section class="page-head">
+    <div class="container">
+      <h1>Продукция</h1>
+      <p class="muted">Категории снабжения для ремонтно-строительных работ.</p>
+      <div class="tabs" role="tablist">
+        <button class="tab active" data-filter="all" role="tab">Все</button>
+        <button class="tab" data-filter="roof" role="tab">Кровля</button>
+        <button class="tab" data-filter="facade" role="tab">Фасад</button>
+        <button class="tab" data-filter="drain" role="tab">Водосточные системы</button>
+        <button class="tab" data-filter="insul" role="tab">Тепло/Гидроизоляция</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="container" style="padding:20px 0 10px">
+    <div id="productsGrid" class="cards products-grid">
+
+      <!-- ====== КРОВЛЯ ====== -->
+      <article class="card product" data-cat="roof">
+        <div class="product-media">
+          <img src="img/roof/prof1.jpeg" alt="Профлист кровельный" class="active">
+          <img src="img/roof/prof2.jpeg" alt="Профлист стеновой">
+          <img src="img/roof/prof3.png" alt="Профлист кровельный" class="active">
+          <img src="img/roof/prof4.png" alt="Профлист стеновой">
+          <button class="slider-arrow prev" aria-label="Назад">‹</button>
+          <button class="slider-arrow next" aria-label="Вперёд">›</button>
+        </div>
+        <h3 class="product-title">Профлист (профнастил)</h3>
+        <p class="product-sub">Стеновой и кровельный · оцинкованный</p>
+        <div class="product-actions">
+          <button class="btn btn-ghost" data-open>Подробнее</button>
+          <a class="btn btn-yellow" href="mailto:bct.22@mail.ru?subject=Заказ:%20Профлист&body=Тип:%0AТолщина:%0AКол-во:%0AАдрес%20доставки:%0A">Запросить счёт</a>
+        </div>
+        <div class="product-details">
+          <ul>
+            <li>Стеновой и кровельный профлист</li>
+            <li>Оцинкованный, возможны полимерные покрытия</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="card product" data-cat="roof">
+        <div class="product-media">
+          <img src="img/roof/metal1.jpeg" alt="Металлочерепица" class="active">
+          <img src="img/roof/metal2.jpeg" alt="Металлочерепица профиль">
+          <img src="img/roof/metal3.jpeg" alt="Металлочерепица" class="active">
+          <img src="img/roof/metal4.jpeg" alt="Металлочерепица профиль">
+          <button class="slider-arrow prev" aria-label="Назад">‹</button>
+          <button class="slider-arrow next" aria-label="Вперёд">›</button>
+        </div>
+        <h3 class="product-title">Металлочерепица</h3>
+        <p class="product-sub">Классическая форма · 0.4–0.5 мм · разные покрытия</p>
+        <div class="product-actions">
+          <button class="btn btn-ghost" data-open>Подробнее</button>
+          <a class="btn btn-yellow" href="mailto:bct.22@mail.ru?subject=Заказ:%20Металлочерепица&body=Толщина:%0AПокрытие/цвет:%0AКол-во:%0AАдрес:%0A">Запросить счёт</a>
+        </div>
+        <div class="product-details">
+          <ul>
+            <li>Толщина металла: 0.4–0.5 мм</li>
+            <li>Разные покрытия и цвета</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="card product" data-cat="roof">
+        <div class="product-media">
+          <img src="img/roof/mayg1.png" alt="Мягкая кровля" class="active">
+          <img src="img/roof/mayg2.png" alt="Битумная черепица">
+          <img src="img/roof/mayg3.png" alt="Мягкая кровля" class="active">
+          <img src="img/roof/mayg4.jpeg" alt="Битумная черепица">
+          <button class="slider-arrow prev" aria-label="Назад">‹</button>
+          <button class="slider-arrow next" aria-label="Вперёд">›</button>
+        </div>
+        <h3 class="product-title">Мягкая кровля</h3>
+        <p class="product-sub">Битумная гибкая черепица · разные текстуры</p>
+        <div class="product-actions">
+          <button class="btn btn-ghost" data-open>Подробнее</button>
+          <a class="btn btn-yellow" href="mailto:bct.22@mail.ru?subject=Заказ:%20Мягкая%20кровля&body=Цвет/факт:%0AКол-во:%0AАдрес:%0A">Запросить счёт</a>
+        </div>
+        <div class="product-details">
+          <ul>
+            <li>Основа: стеклохолст, СБС-модификатор</li>
+            <li>Разные цвета и текстуры</li>
+          </ul>
+        </div>
+      </article>
+      <article class="card product" data-cat="roof">
+        <div class="product-media">
+          <img src="img/roof/rulon1.jpeg" alt="Рулонные материалы для кровли" class="active">
+          <img src="img/roof/rulon2.jpeg" alt="Рулонная гидроизоляция">
+          <img src="img/roof/rulon3.png" alt="Рулонные материалы для кровли" class="active">
+          <button class="slider-arrow prev" aria-label="Назад">‹</button>
+          <button class="slider-arrow next" aria-label="Вперёд">›</button>
+        </div>
+        <h3 class="product-title">Гидроизоляция битумная</h3>
+        <p class="product-sub">Наплавляемая и самоклеящаяся</p>
+        <div class="product-actions">
+          <button class="btn btn-ghost" data-open>Подробнее</button>
+          <a class="btn btn-yellow" href="mailto:bct.22@mail.ru?subject=Заказ:%20Битумная%20гидроизоляция&body=Тип:%0AКол-во:%0AАдрес:%0A">Запросить счёт</a>
+        </div>
+        <div class="product-details">
+          <ul>
+            <li>Наплавляемая гидроизоляция</li>
+            <li>Самоклеящиеся материалы</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="card product" data-cat="roof">
+        <div class="product-media">
+          <img src="img/roof/dobor1.jpeg" alt="Доборные элементы кровля" class="active">
+          <img src="img/roof/dobor2.jpeg" alt="Крепёж и плёнки">
+          <img src="img/roof/dobor3.jpeg" alt="Крепёж и плёнки">
+          <button class="slider-arrow prev" aria-label="Назад">‹</button>
+          <button class="slider-arrow next" aria-label="Вперёд">›</button>
+        </div>
+        <h3 class="product-title">Доборные элементы (кровля)</h3>
+        <p class="product-sub">Саморезы, уплотнители, мембраны</p>
+        <div class="product-actions">
+          <button class="btn btn-ghost" data-open>Подробнее</button>
+          <a class="btn btn-yellow" href="mailto:bct.22@mail.ru?subject=Заказ:%20Доборные%20элементы%20(кровля)&body=Позиция:%0AКол-во:%0AАдрес:%0A">Запросить счёт</a>
+        </div>
+        <div class="product-details">
+          <ul>
+            <li>Саморезы, крепёж</li>
+            <li>Уплотнители и герметики</li>
+            <li>Подкровельные плёнки: паро-/гидроизоляция</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="card product" data-cat="roof">
+        <div class="product-media">
+          <img src="img/roof/utep%20(1).jpeg" alt="Утепление под кровлю" class="active">
+          <img src="img/roof/utep%20(2).jpeg" alt="Сэндвич-панели кровля">
+          <img src="img/roof/utep%20(3).jpeg" alt="Утепление под кровлю" class="active">
+          <button class="slider-arrow prev" aria-label="Назад">‹</button>
+          <button class="slider-arrow next" aria-label="Вперёд">›</button>
+        </div>
+        <h3 class="product-title">Утепление под кровлю</h3>
+        <p class="product-sub">Минвата, ППС, сэндвич-панели</p>
+        <div class="product-actions">
+          <button class="btn btn-ghost" data-open>Подробнее</button>
+          <a class="btn btn-yellow" href="mailto:bct.22@mail.ru?subject=Заказ:%20Утепление%20под%20кровлю&body=Материал:%0AТолщина:%0AКол-во:%0AАдрес:%0A">Запросить счёт</a>
+        </div>
+        <div class="product-details">
+          <ul>
+            <li>Минеральная вата</li>
+            <li>Пенополистирол</li>
+            <li>Сэндвич-панели (по применению)</li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- ====== ФАСАД ====== -->
+      <article class="card product" data-cat="facade">
+        <div class="product-media">
+          <img src="img/facade/panels%20(1).jpeg" alt="Фасадные панели" class="active">
+          <img src="img/facade/panels%20(2).jpeg" alt="Композитные панели">
+          <img src="img/facade/panels%20(3).jpeg" alt="Композитные панели">
+          <button class="slider-arrow prev" aria-label="Назад">‹</button>
+          <button class="slider-arrow next" aria-label="Вперёд">›</button>
+        </div>
+        <h3 class="product-title">Фасадные панели</h3>
+        <p class="product-sub">Металл, композит, имитация камня/кирпича/дерева</p>
+        <div class="product-actions">
+          <button class="btn btn-ghost" data-open>Подробнее</button>
+          <a class="btn btn-yellow" href="mailto:bct.22@mail.ru?subject=Заказ:%20Фасадные%20панели&body=Тип:%0AЦвет:%0AКол-во:%0AАдрес:%0A">Запросить счёт</a>
+        </div>
+        <div class="product-details">
+          <ul>
+            <li>Металлические панели</li>
+            <li>Панели с имитацией камня, кирпича, дерева</li>
+            <li>Композитные панели</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="card product" data-cat="facade">
+        <div class="product-media">
+          <img src="img/facade/slats%20(1).jpeg" alt="Реечные панели и потолки" class="active">
+          <img src="img/facade/slats%20(2).jpeg" alt="Реечные системы">
+          <img src="img/facade/slats%20(3).jpeg" alt="Реечные системы">
+          <button class="slider-arrow prev" aria-label="Назад">‹</button>
+          <button class="slider-arrow next" aria-label="Вперёд">›</button>
+        </div>
+        <h3 class="product-title">Реечные панели и потолки</h3>
+        <p class="product-sub">Алюминий/сталь · открытые и закрытые системы</p>
+        <div class="product-actions">
+          <button class="btn btn-ghost" data-open>Подробнее</button>
+          <a class="btn btn-yellow" href="mailto:bct.22@mail.ru?subject=Заказ:%20Реечные%20панели%20и%20потолки&body=Тип:%0AКол-во:%0AАдрес:%0A">Запросить счёт</a>
+        </div>
+        <div class="product-details">
+          <ul>
+            <li>Металлические реечные панели (алюминиевые, стальные)</li>
+            <li>Потолочные реечные системы (открытые/закрытые)</li>
+            <li>Декоративные рейки (под дерево, под камень)</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="card product" data-cat="facade">
+        <div class="product-media">
+          <img src="img/facade/siding%20(1).jpeg" alt="Сайдинг" class="active">
+          <img src="img/facade/siding%20(2).jpeg" alt="Фиброцементный сайдинг">
+          <img src="img/facade/siding%20(3).jpeg" alt="Фиброцементный сайдинг">
+          <button class="slider-arrow prev" aria-label="Назад">‹</button>
+          <button class="slider-arrow next" aria-label="Вперёд">›</button>
+        </div>
+        <h3 class="product-title">Сайдинг</h3>
+        <p class="product-sub">Виниловый, металлический, фиброцементный, деревянный</p>
+        <div class="product-actions">
+          <button class="btn btn-ghost" data-open>Подробнее</button>
+          <a class="btn btn-yellow" href="mailto:bct.22@mail.ru?subject=Заказ:%20Сайдинг&body=Тип:%0AЦвет:%0AКол-во:%0AАдрес:%0A">Запросить счёт</a>
+        </div>
+        <div class="product-details">
+          <ul>
+            <li>Виниловый, металлический, фиброцементный, деревянный</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="card product" data-cat="facade">
+        <div class="product-media">
+          <img src="img/facade/azs-1.jpeg" alt="Облицовка колонн и АЗС" class="active">
+          <img src="img/facade/azs-2.jpeg" alt="Панели для АЗС">
+          <button class="slider-arrow prev" aria-label="Назад">‹</button>
+          <button class="slider-arrow next" aria-label="Вперёд">›</button>
+        </div>
+        <h3 class="product-title">Облицовка колонн и АЗС</h3>
+        <p class="product-sub">Цилиндрические, плоские и гнутые панели</p>
+        <div class="product-actions">
+          <button class="btn btn-ghost" data-open>Подробнее</button>
+          <a class="btn btn-yellow" href="mailto:bct.22@mail.ru?subject=Заказ:%20Облицовка%20колонн%20и%20АЗС&body=Позиция:%0AКол-во:%0AАдрес:%0A">Запросить счёт</a>
+        </div>
+        <div class="product-details">
+          <ul>
+            <li>Цилиндрические панели для колонн</li>
+            <li>Плоские и гнутые панели для АЗС</li>
+            <li>Декоративные кожухи и кассетные системы</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="card product" data-cat="facade">
+        <div class="product-media">
+          <img src="img/facade/aux1.jpeg" alt="Кронштейны, профили, утеплитель" class="active">
+          <img src="img/facade/aux2.jpeg" alt="Мембраны фасадные">
+          <button class="slider-arrow prev" aria-label="Назад">‹</button>
+          <button class="slider-arrow next" aria-label="Вперёд">›</button>
+        </div>
+        <h3 class="product-title">Вспомогательные товары</h3>
+        <p class="product-sub">Кронштейны, профили, утеплитель, мембраны</p>
+        <div class="product-actions">
+          <button class="btn btn-ghost" data-open>Подробнее</button>
+          <a class="btn btn-yellow" href="mailto:bct.22@mail.ru?subject=Заказ:%20Вспомогательные%20товары%20(фасад)&body=Позиция:%0AКол-во:%0AАдрес:%0A">Запросить счёт</a>
+        </div>
+        <div class="product-details">
+          <ul>
+            <li>Крепёжные элементы (кронштейны, профили, направляющие)</li>
+            <li>Утеплитель: минвата, PIR, XPS</li>
+            <li>Паро- и ветрозащитные мембраны</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="card product" data-cat="facade">
+        <div class="product-media">
+          <img src="img/facade/trim.jpeg" alt="Доборные элементы фасад" class="active">
+          <button class="slider-arrow prev" aria-label="Назад">‹</button>
+          <button class="slider-arrow next" aria-label="Вперёд">›</button>
+        </div>
+        <h3 class="product-title">Доборные элементы</h3>
+        <p class="product-sub">Углы, откосы, наличники, планки</p>
+        <div class="product-actions">
+          <button class="btn btn-ghost" data-open>Подробнее</button>
+          <a class="btn btn-yellow" href="mailto:bct.22@mail.ru?subject=Заказ:%20Доборные%20элементы%20(фасад)&body=Позиция:%0AКол-во:%0AАдрес:%0A">Запросить счёт</a>
+        </div>
+        <div class="product-details">
+          <ul>
+            <li>Углы, откосы, наличники</li>
+            <li>Стартовые и финишные профили</li>
+            <li>Декоративные планки</li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- ====== ВОДОСТОЧНЫЕ СИСТЕМЫ ====== -->
+      <article class="card product" data-cat="drain">
+        <div class="product-media">
+          <img src="img/drain/gutter-1.jpeg" alt="Желоба" class="active">
+          <img src="img/drain/gutter-2.jpeg" alt="Желоба прямоугольные">
+          <button class="slider-arrow prev" aria-label="Назад">‹</button>
+          <button class="slider-arrow next" aria-label="Вперёд">›</button>
+        </div>
+        <h3 class="product-title">Желоба</h3>
+        <p class="product-sub">Полукруглые/прямоугольные · Ø100/125/150 · ПВХ/металл</p>
+        <div class="product-actions">
+          <button class="btn btn-ghost" data-open>Подробнее</button>
+          <a class="btn btn-yellow" href="mailto:bct.22@mail.ru?subject=Заказ:%20Желоба&body=Форма/диаметр:%0AМатериал:%0AКол-во:%0AАдрес:%0A">Запросить счёт</a>
+        </div>
+        <div class="product-details">
+          <ul>
+            <li>Полукруглые и прямоугольные</li>
+            <li>Диаметры: 100, 125, 150 мм</li>
+            <li>Материалы: ПВХ, металл</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="card product" data-cat="drain">
+        <div class="product-media">
+          <img src="img/drain/pipe.jpeg" alt="Водосточные трубы" class="active">
+          <button class="slider-arrow prev" aria-label="Назад">‹</button>
+          <button class="slider-arrow next" aria-label="Вперёд">›</button>
+        </div>
+        <h3 class="product-title">Водосточные трубы</h3>
+        <p class="product-sub">Диаметры Ø75/100 мм · ПВХ/металл</p>
+        <div class="product-actions">
+          <button class="btn btn-ghost" data-open>Подробнее</button>
+          <a class="btn btn-yellow" href="mailto:bct.22@mail.ru?subject=Заказ:%20Водосточные%20трубы&body=Диаметр:%0AМатериал:%0AКол-во:%0AАдрес:%0A">Запросить счёт</a>
+        </div>
+        <div class="product-details">
+          <ul>
+            <li>Диаметры: 75 мм, 100 мм и др.</li>
+            <li>Материалы: ПВХ и металлические</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="card product" data-cat="drain">
+        <div class="product-media">
+          <img src="img/drain/funnel1.jpeg" alt="Воронки и колена" class="active">
+          <img src="img/drain/funnel2.jpeg" alt="Колена сливные">
+          <button class="slider-arrow prev" aria-label="Назад">‹</button>
+          <button class="slider-arrow next" aria-label="Вперёд">›</button>
+        </div>
+        <h3 class="product-title">Воронки и колена</h3>
+        <p class="product-sub">Воронки, верхние/нижние колена, декор</p>
+        <div class="product-actions">
+          <button class="btn btn-ghost" data-open>Подробнее</button>
+          <a class="btn btn-yellow" href="mailto:bct.22@mail.ru?subject=Заказ:%20Воронки%20и%20колена&body=Позиция:%0AКол-во:%0AАдрес:%0A">Запросить счёт</a>
+        </div>
+        <div class="product-details">
+          <ul>
+            <li>Воронки для соединения желоба и трубы</li>
+            <li>Колено сливное (верхнее и нижнее)</li>
+            <li>Декоративные варианты</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="card product" data-cat="drain">
+        <div class="product-media">
+          <img src="img/drain/snow.jpeg" alt="Снегодержатели" class="active">
+          <button class="slider-arrow prev" aria-label="Назад">‹</button>
+          <button class="slider-arrow next" aria-label="Вперёд">›</button>
+        </div>
+        <h3 class="product-title">Снегодержатели и защита</h3>
+        <p class="product-sub">Трубчатые/решётчатые · совместимы с системами</p>
+        <div class="product-actions">
+          <button class="btn btn-ghost" data-open>Подробнее</button>
+          <a class="btn btn-yellow" href="mailto:bct.22@mail.ru?subject=Заказ:%20Снегодержатели&body=Тип:%0AКол-во:%0AАдрес:%0A">Запросить счёт</a>
+        </div>
+        <div class="product-details">
+          <ul>
+            <li>Снегодержатели (трубчатые и решётчатые)</li>
+            <li>Элементы защиты кровли</li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- ====== ТЕПЛО-/ГИДРОИЗОЛЯЦИЯ и СЭНДВИЧ ====== -->
+      <article class="card product" data-cat="insul">
+        <div class="product-media">
+          <img src="img/insul/minwool1.jpeg" alt="Минеральная вата" class="active">
+          <img src="img/insul/minwool2.jpeg" alt="Плиты минваты">
+          <button class="slider-arrow prev" aria-label="Назад">‹</button>
+          <button class="slider-arrow next" aria-label="Вперёд">›</button>
+        </div>
+        <h3 class="product-title">Теплоизоляция: Минеральная вата</h3>
+        <p class="product-sub">Базальтовые и стеклянные плиты/маты</p>
+        <div class="product-actions">
+          <button class="btn btn-ghost" data-open>Подробнее</button>
+          <a class="btn btn-yellow" href="mailto:bct.22@mail.ru?subject=Заказ:%20Минеральная%20вата&body=Плотность/толщина:%0AКол-во:%0AАдрес:%0A">Запросить счёт</a>
+        </div>
+        <div class="product-details">
+          <ul>
+            <li>Минеральная вата</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="card product" data-cat="insul">
+        <div class="product-media">
+          <img src="img/insul/eps.jpeg" alt="Пенополистирол" class="active">
+          <button class="slider-arrow prev" aria-label="Назад">‹</button>
+          <button class="slider-arrow next" aria-label="Вперёд">›</button>
+        </div>
+        <h3 class="product-title">Теплоизоляция: Пенополистирол</h3>
+        <p class="product-sub">ППС/ЭППС · разные толщины</p>
+        <div class="product-actions">
+          <button class="btn btn-ghost" data-open>Подробнее</button>
+          <a class="btn btn-yellow" href="mailto:bct.22@mail.ru?subject=Заказ:%20Пенополистирол&body=Марка/толщина:%0AКол-во:%0AАдрес:%0A">Запросить счёт</a>
+        </div>
+        <div class="product-details">
+          <ul>
+            <li>Пенополистирол (EPS/XPS)</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="card product" data-cat="insul">
+        <div class="product-media">
+          <img src="img/insul/pir.jpeg" alt="PIR плиты" class="active">
+          <button class="slider-arrow prev" aria-label="Назад">‹</button>
+          <button class="slider-arrow next" aria-label="Вперёд">›</button>
+        </div>
+        <h3 class="product-title">Теплоизоляция: PIR-плиты</h3>
+        <p class="product-sub">Жёсткий утеплитель нового поколения</p>
+        <div class="product-actions">
+          <button class="btn btn-ghost" data-open>Подробнее</button>
+          <a class="btn btn-yellow" href="mailto:bct.22@mail.ru?subject=Заказ:%20PIR-%D0%BF%D0%BB%D0%B8%D1%82%D1%8B&body=Толщина:%0AПлощадь:%0AАдрес:%0A">Запросить счёт</a>
+        </div>
+        <div class="product-details">
+          <ul>
+            <li>PIR-плиты (жёсткий утеплитель)</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="card product" data-cat="insul">
+        <div class="product-media">
+          <img src="img/insul/membrane.jpeg" alt="Мембраны/плёнки" class="active">
+          <button class="slider-arrow prev" aria-label="Назад">‹</button>
+          <button class="slider-arrow next" aria-label="Вперёд">›</button>
+        </div>
+        <h3 class="product-title">Гидроизоляция: плёнки и мембраны</h3>
+        <p class="product-sub">Рулонные материалы, плёнки, мембраны</p>
+        <div class="product-actions">
+          <button class="btn btn-ghost" data-open>Подробнее</button>
+          <a class="btn btn-yellow" href="mailto:bct.22@mail.ru?subject=Заказ:%20Мембраны%20и%20плёнки&body=Тип:%0AКол-во:%0AАдрес:%0A">Запросить счёт</a>
+        </div>
+        <div class="product-details">
+          <ul>
+            <li>Рулонные материалы</li>
+            <li>Плёнки и мембраны</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="card product" data-cat="insul">
+        <div class="product-media">
+          <img src="img/insul/liquid1.jpeg" alt="Жидкая/проникающая гидроизоляция" class="active">
+          <img src="img/insul/liquid2.jpeg" alt="Гидроизоляция фундамента">
+          <img src="img/insul/liquid3.jpeg" alt="Гидроизоляция фундамента">
+          <button class="slider-arrow prev" aria-label="Назад">‹</button>
+          <button class="slider-arrow next" aria-label="Вперёд">›</button>
+        </div>
+        <h3 class="product-title">Гидроизоляция: жидкая и проникающая</h3>
+        <p class="product-sub">Для бетона, фундаментов, резервуаров</p>
+        <div class="product-actions">
+          <button class="btn btn-ghost" data-open>Подробнее</button>
+          <a class="btn btn-yellow" href="mailto:bct.22@mail.ru?subject=Заказ:%20Жидкая/проникающая%20гидроизоляция&body=Тип:%0AКол-во:%0AАдрес:%0A">Запросить счёт</a>
+        </div>
+        <div class="product-details">
+          <ul>
+            <li>Жидкая гидроизоляция</li>
+            <li>Проникающая гидроизоляция (бетон, фундаменты)</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="card product" data-cat="insul">
+        <div class="product-media">
+          <img src="img/insul/sandwich.jpeg" alt="Сэндвич-панели" class="active">
+          <button class="slider-arrow prev" aria-label="Назад">‹</button>
+          <button class="slider-arrow next" aria-label="Вперёд">›</button>
+        </div>
+        <h3 class="product-title">Сэндвич-панели</h3>
+        <p class="product-sub">Минвата, ППС, ППУ · стеновые/кровельные/холодильные</p>
+        <div class="product-actions">
+          <button class="btn btn-ghost" data-open>Подробнее</button>
+          <a class="btn class btn-yellow" href="mailto:bct.22@mail.ru?subject=Заказ:%20Сэндвич-панели&body=Назначение:%0AТолщина:%0AПлощадь:%0AАдрес:%0A">Запросить счёт</a>
+        </div>
+        <div class="product-details">
+          <ul>
+            <li><em>По наполнителю:</em> минеральная вата, пенополистирол, полиуретан</li>
+            <li><em>По назначению:</em> стеновые, кровельные, холодильные панели</li>
+            <li>Толщина: 50–250 мм; покрытия: оцинкованная сталь, полимер, алюминий</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="card product" data-cat="insul">
+        <div class="product-media">
+          <img src="img/insul/aux.jpeg" alt="Вспомогательные материалы" class="active">
+          <button class="slider-arrow prev" aria-label="Назад">‹</button>
+          <button class="slider-arrow next" aria-label="Вперёд">›</button>
+        </div>
+        <h3 class="product-title">Вспомогательные материалы</h3>
+        <p class="product-sub">Крепёж, герметики, пена, ленты, доборные элементы</p>
+        <div class="product-actions">
+          <button class="btn btn-ghost" data-open>Подробнее</button>
+          <a class="btn btn-yellow" href="mailto:bct.22@mail.ru?subject=Заказ:%20Вспомогательные%20материалы&body=Позиция:%0AКол-во:%0AАдрес:%0A">Запросить счёт</a>
+        </div>
+        <div class="product-details">
+          <ul>
+            <li>Крепёжные элементы (саморезы, анкеры)</li>
+            <li>Герметики и монтажная пена</li>
+            <li>Стыковочные ленты и доборные элементы (углы, откосы, нащельники)</li>
+          </ul>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <dialog id="productModal" class="modal" aria-labelledby="pmTitle">
+    <h3 id="pmTitle">Название</h3>
+    <div class="modal-slider" id="pmSlider"></div>
+    <div id="pmText"></div>
+    <div class="modal-actions">
+      <a id="pmMail" class="btn btn-yellow" href="#">Оформить запрос</a>
+      <button class="btn btn-ghost" data-close>Закрыть</button>
+    </div>
+  </dialog>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div><strong>Building City Time</strong><br/>repair company</div>
+    <div>
+      <ul class="footer-list">
+        <li><a href="index.html">О компании</a></li>
+        <li><a href="products.html">Продукция</a></li>
+        <li><a href="services.html">Услуги</a></li>
+        <li><a href="contact.html">Контакты</a></li>
+      </ul>
+    </div>
+    <div>
+      <ul class="footer-list">
+        <li><a href="tel:+77773377701">8 (777) 33 777 01</a></li>
+        <li><a href="mailto:bct.22@mail.ru">bct.22@mail.ru</a></li>
+        <li>г. Астана, ул. Достык 16, Talan Towers</li>
+      </ul>
+    </div>
+  </div>
+  <div class="subfooter">© <span id="year"></span> BCT</div>
+</footer>
+
+<a class="whatsapp-fab" href="https://wa.me/77773377701" target="_blank" rel="noopener" aria-label="Написать в WhatsApp">WA</a>
+</body>
+</html>
+<!--Web page provided by N0Pumpkin aka Nurel Orazayev-->
