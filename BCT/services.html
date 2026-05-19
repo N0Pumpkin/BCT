@@ -1,119 +1,81 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no">
-
-    <title>Услуги — Building City Time</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <script defer src="js/script.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Услуги — Building City Time</title>
+  <meta name="description" content="Монтаж кровли, фасадов, утепление, гидроизоляция, монтаж водостока. Астана и Казахстан.">
+  <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-<header class="site-header">
-    <div class="container header-row">
-        <a class="logo-badge" href="index.html" aria-label="На главную">
-            <img src="logo/logo.png" alt="Building City Time" />
-        </a>
+<body data-page="services">
 
-        <ul class="nav-list">
-            <li><a class="nav-link" href="index.html">О компании</a></li>
-            <li><a class="nav-link" href="products.html">Продукция</a></li>
-            <li><a class="nav-link active" aria-current="page" href="services.html">Услуги</a></li>
-            <li><a class="nav-link" href="contact.html">Контакты</a></li>
-            <li><a class="btn btn-yellow" href="mailto:bct.22@mail.ru?subject=Заявка%20BCT&body=Имя:%0AТелефон:%0AОписание%20работ/заказа:%0A">Заполнить анкету</a></li>
-        </ul>
-
-        <button class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false" aria-controls="drawer">
-            <span></span><span></span><span></span>
-        </button>
-    </div>
-</header>
-
-<aside class="drawer" id="drawer" aria-hidden="true">
-    <nav class="drawer-nav">
-        <a href="index.html">О компании</a>
-        <a href="products.html">Продукция</a>
-        <a class="active" href="services.html">Услуги</a>
-        <a href="contact.html">Контакты</a>
-        <a class="btn btn-yellow w-100" href="mailto:bct.22@mail.ru?subject=Заявка%20BCT&body=Имя:%0AТелефон:%0AОписание%20работ/заказа:%0A">Запросить счёт</a>
-    </nav>
-</aside>
+<header class="site-header"></header>
+<aside class="drawer" id="drawer" aria-hidden="true"><nav class="drawer-nav"></nav></aside>
 <div class="backdrop" id="backdrop" hidden></div>
 
 <main>
-    <section class="page-head">
-        <div class="container">
-            <h1>Также мы выполняем полный спектр ремонтно строительных услуг</h1>
-            <p class="muted">Жилые дома, коммерческие помещения, государственные и частные учреждения. Работаем по всему Казахстану.</p>
-        </div>
-    </section>
-    <section class="features">
-        <div class="container">
-            <h2>Почему мы</h2>
-            <div class="cards counter">
-                <article class="card"><h3>Индивидуальные решения</h3><p>Под каждый проект подбираем оптимальные материалы и технологии.</p></article>
-                <article class="card"><h3>Оперативность</h3><p>Быстро реагируем на запросы, реализуем проекты в сжатые сроки.</p></article>
-                <article class="card"><h3>Сложные задачи</h3><p>Берёмся за нестандартные и технически сложные работы.</p></article>
-                <article class="card"><h3>Любые объёмы</h3><p>От квартиры до многофункционального центра — укомплектуем и выполним.</p></article>
-                <article class="card"><h3>Качество и внимание</h3><p>Современные технологии строительства, контроль качества, внимание к деталям.</p></article>
-                <article class="card"><h3>Гарантия</h3><p>Гарантия на все виды работ. Смета и документы — прозрачно.</p></article>
-            </div>
-        </div>
-    </section>
+  <section class="page-head">
+    <div class="container">
+      <h1>Услуги</h1>
+      <p class="muted">Монтаж материалов под ключ — от проектирования до сдачи объекта.</p>
+    </div>
+  </section>
 
-    <section class="features">
-        <div class="container">
-            <h2>Порядок работ инженерных сетей</h2>
-            <div class="cards counter">
-                <article class="card"><h3>Электроснабжение</h3><p>Монтаж внутренних и внешних сетей: щиты, линии, защита. Соблюдаем нормы и ТБ.</p></article>
-                <article class="card"><h3>Отопление</h3><p>Подберём оптимальную систему отопления для объекта любой сложности.</p></article>
-                <article class="card"><h3>Водоснабжение</h3><p>Проектирование и установка всех элементов системы водопровода.</p></article>
-                <article class="card"><h3>Канализация</h3><p>Внутренние и наружные сети, работа круглый год.</p></article>
-                <article class="card"><h3>Вентиляция и кондиционирование</h3><p>Системы вентиляции и кондиционирования для бытовых и промышленных задач.</p></article>
-            </div>
-        </div>
-    </section>
+  <section class="section container">
+    <!-- Сетка услуг — генерируется из BCT.services -->
+    <div class="services-grid"></div>
+  </section>
 
-    <section class="service-slab">
-        <div class="container">
-            <h2>Проектирование и сопровождение</h2>
-            <ul class="bullets two-col">
-                <li>Дизайн-проект</li>
-                <li>Подготовка рабочих чертежей</li>
-                <li>Разработка и согласование проектов инженерных систем</li>
-                <li>Гарантия на все виды работ</li>
-            </ul>
-            <div class="hero-actions">
-                <a class="btn btn-yellow" href="mailto:bct.22@mail.ru?subject=Заявка%20на%20услуги&body=Имя:%0AТелефон:%0AКратко%20о%20задаче:%0A">Запросить смету</a>
-                <a class="btn btn-ghost" href="https://wa.me/77773377701" target="_blank" rel="noopener">WhatsApp</a>
-            </div>
+  <!-- Как мы работаем -->
+  <section style="background:var(--color-surface-1);border-top:1px solid var(--color-surface-3);padding:40px 0">
+    <div class="container">
+      <h2 style="margin-bottom:24px">Как мы работаем</h2>
+      <div class="cards cards-4" style="gap:16px">
+        <div class="card" style="text-align:center">
+          <div style="font-size:32px;margin-bottom:10px">📞</div>
+          <h4>1. Заявка</h4>
+          <p style="font-size:14px;color:var(--color-text-muted)">Оставьте заявку через WhatsApp, телефон или форму. Отвечаем в течение часа.</p>
         </div>
-    </section>
+        <div class="card" style="text-align:center">
+          <div style="font-size:32px;margin-bottom:10px">📐</div>
+          <h4>2. Расчёт</h4>
+          <p style="font-size:14px;color:var(--color-text-muted)">Инженер рассчитает объём материала и стоимость работ по вашему объекту.</p>
+        </div>
+        <div class="card" style="text-align:center">
+          <div style="font-size:32px;margin-bottom:10px">📦</div>
+          <h4>3. Поставка</h4>
+          <p style="font-size:14px;color:var(--color-text-muted)">Привозим материал на объект в согласованные сроки.</p>
+        </div>
+        <div class="card" style="text-align:center">
+          <div style="font-size:32px;margin-bottom:10px">🔧</div>
+          <h4>4. Монтаж</h4>
+          <p style="font-size:14px;color:var(--color-text-muted)">Монтажная бригада выполняет работы. Сдаём объект с гарантией.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <div class="container cta-row">
+      <h2>Обсудить объект?</h2>
+      <div style="display:flex;gap:12px;flex-wrap:wrap">
+        <a class="btn btn-yellow" id="cta-wa" href="#" target="_blank" rel="noopener">Написать в WhatsApp</a>
+        <a class="btn btn-ghost" href="catalog.html">Перейти в каталог</a>
+      </div>
+    </div>
+  </section>
 </main>
 
-<footer class="site-footer">
-    <div class="container footer-grid">
-        <div><strong>Building City Time</strong><br/>repair company</div>
-        <div>
-            <ul class="footer-list">
-                <li><a href="index.html">О компании</a></li>
-                <li><a href="products.html">Продукция</a></li>
-                <li><a href="services.html">Услуги</a></li>
-                <li><a href="contact.html">Контакты</a></li>
-            </ul>
-        </div>
-        <div>
-            <ul class="footer-list">
-                <li><a href="tel:+77773377701">8 (777) 33 777 01</a></li>
-                <li><a href="mailto:bct.22@mail.ru">bct.22@mail.ru</a></li>
-                <li>г. Астана, ул. Достык 16, Talan Towers</li>
-            </ul>
-        </div>
-    </div>
-    <div class="subfooter">© <span id="year"></span> BCT</div>
-</footer>
+<footer class="site-footer"></footer>
+<a class="whatsapp-fab" href="#" target="_blank" rel="noopener" aria-label="Написать в WhatsApp"><svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor" aria-hidden="true"><path d="M20.52 3.48A11.93 11.93 0 0 0 12.06 0C5.5 0 .17 5.33.17 11.88c0 2.1.55 4.14 1.6 5.95L0 24l6.32-1.65a11.85 11.85 0 0 0 5.74 1.46h.01c6.55 0 11.88-5.33 11.88-11.88 0-3.17-1.24-6.16-3.43-8.45zM12.07 21.79h-.01a9.9 9.9 0 0 1-5.04-1.38l-.36-.21-3.75.98 1-3.66-.24-.38a9.86 9.86 0 0 1-1.51-5.26c0-5.45 4.44-9.88 9.9-9.88 2.64 0 5.13 1.03 6.99 2.9a9.85 9.85 0 0 1 2.9 6.99c0 5.45-4.44 9.9-9.88 9.9zm5.43-7.4c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.25-.46-2.38-1.47a8.95 8.95 0 0 1-1.65-2.05c-.17-.3-.02-.46.13-.6.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51-.17-.01-.37-.01-.57-.01s-.52.07-.8.37c-.27.3-1.05 1.02-1.05 2.49 0 1.47 1.07 2.89 1.22 3.09.15.2 2.1 3.2 5.1 4.49.71.31 1.27.49 1.7.63.71.23 1.36.2 1.87.12.57-.08 1.76-.72 2-1.41.25-.7.25-1.29.17-1.41-.07-.12-.27-.2-.57-.35z"/></svg></a>
 
-<a class="whatsapp-fab" href="https://wa.me/77773377701" target="_blank" rel="noopener" aria-label="Написать в WhatsApp">WA</a>
+<script src="js/data.js"></script>
+<script src="js/components.js"></script>
+<script src="js/script.js"></script>
+<script>
+  renderHeader('services', '');
+  renderFooter('');
+  document.getElementById('cta-wa').href = BCT.contacts.whatsapp + '?text=' + encodeURIComponent('Здравствуйте! Хочу обсудить монтажные работы.');
+</script>
 </body>
 </html>
-<!--Web page provided by N0Pumpkin aka Nurel Orazayev-->

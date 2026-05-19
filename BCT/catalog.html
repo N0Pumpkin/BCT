@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Каталог — Building City Time</title>
+  <meta name="description" content="Полный каталог строительных материалов: кровля, фасады, изоляция, водосток. Характеристики, цены, подбор.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="catalog">
+
+<header class="site-header"></header>
+<aside class="drawer" id="drawer" aria-hidden="true"><nav class="drawer-nav"></nav></aside>
+<div class="backdrop" id="backdrop" hidden></div>
+
+<main>
+
+  <!-- Шапка страницы -->
+  <section class="page-head">
+    <div class="container">
+      <h1>Каталог продукции</h1>
+      <p class="muted">Кровля, фасады, изоляция, водосток — характеристики, цены, консультации.</p>
+
+      <!-- Быстрые ссылки на разделы -->
+      <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:12px">
+        <a class="btn btn-ghost btn-sm" href="catalog/roofing.html">Кровля</a>
+        <a class="btn btn-ghost btn-sm" href="catalog/facade.html">Фасады</a>
+        <a class="btn btn-ghost btn-sm" href="catalog/insulation.html">Изоляция</a>
+        <a class="btn btn-ghost btn-sm" href="catalog/drainage.html">Водосток</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Сетка товаров по категориям — генерируется из BCT.catalog -->
+  <div class="catalog-list"></div>
+
+  <!-- CTA -->
+  <section class="cta">
+    <div class="container cta-row">
+      <h2>Не нашли нужный материал?</h2>
+      <div style="display:flex;gap:12px;flex-wrap:wrap">
+        <a class="btn btn-yellow" id="cta-wa" href="#" target="_blank" rel="noopener">Написать в WhatsApp</a>
+        <a class="btn btn-ghost" href="contact.html">Все контакты</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer"></footer>
+<a class="whatsapp-fab" href="#" target="_blank" rel="noopener" aria-label="Написать в WhatsApp"><svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor" aria-hidden="true"><path d="M20.52 3.48A11.93 11.93 0 0 0 12.06 0C5.5 0 .17 5.33.17 11.88c0 2.1.55 4.14 1.6 5.95L0 24l6.32-1.65a11.85 11.85 0 0 0 5.74 1.46h.01c6.55 0 11.88-5.33 11.88-11.88 0-3.17-1.24-6.16-3.43-8.45zM12.07 21.79h-.01a9.9 9.9 0 0 1-5.04-1.38l-.36-.21-3.75.98 1-3.66-.24-.38a9.86 9.86 0 0 1-1.51-5.26c0-5.45 4.44-9.88 9.9-9.88 2.64 0 5.13 1.03 6.99 2.9a9.85 9.85 0 0 1 2.9 6.99c0 5.45-4.44 9.9-9.88 9.9zm5.43-7.4c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.25-.46-2.38-1.47a8.95 8.95 0 0 1-1.65-2.05c-.17-.3-.02-.46.13-.6.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51-.17-.01-.37-.01-.57-.01s-.52.07-.8.37c-.27.3-1.05 1.02-1.05 2.49 0 1.47 1.07 2.89 1.22 3.09.15.2 2.1 3.2 5.1 4.49.71.31 1.27.49 1.7.63.71.23 1.36.2 1.87.12.57-.08 1.76-.72 2-1.41.25-.7.25-1.29.17-1.41-.07-.12-.27-.2-.57-.35z"/></svg></a>
+
+<script src="js/data.js"></script>
+<script src="js/components.js"></script>
+<script src="js/script.js"></script>
+<script>
+  renderHeader('catalog', '');
+  renderFooter('');
+  renderModal();
+  document.getElementById('cta-wa').href = BCT.contacts.whatsapp;
+</script>
+</body>
+</html>
